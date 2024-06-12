@@ -1,0 +1,107 @@
+.feedback-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.section-header {
+  font-family: "Roboto Slab", serif;
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 65.94px;
+  text-align: left;
+  color: #224F34; 
+  margin-bottom: 20px;
+}
+
+.feedback-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+}
+
+.feedback-item {
+  width: 434px;
+  height: 253px;
+  padding: 20px;
+  border-radius: 3px 0px 0px 0px;
+  opacity: 1; 
+  background: #FFFFFF; 
+  box-shadow: 0px 7px 30px 0px #0000000D; 
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback-content {
+  display: flex;
+  align-items: center;
+}
+
+.quotation-mark {
+  font-family: "Arial Rounded MT Bold", sans-serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 69.43px;
+  text-align: left;
+  color: #224F34;
+  margin-left: 0px;
+  margin-top: -30px;
+}
+
+.feedback-author {
+  font-family: "Roboto Serif", serif;
+  font-size: 22px;
+  font-weight: 600; 
+  line-height: 25.76px; 
+  text-align: left;
+  color: #224F34; 
+  margin-left: -20px;
+  margin-top: 50px;
+  
+}
+
+.feedback-message {
+  font-size: 16px;
+  margin-top: 10px; 
+}
+
+
+.feedback-message {
+  font-size: 16px;
+  margin-top: 25px; /* Margin above the message */
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 3px 0px 0px 0px;
+  border: 2px solid #224F34;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+  box-shadow: 0px 7px 51px 0px #0000001A;
+}
+
+#prev-btn {
+  background: #FFFFFF;
+  margin-right: 10px;
+}
+
+#next-btn {
+  background: #C2EFD4;
+}
+
+.pagination-btn:hover {
+  opacity: 0.8; /
+}
+
