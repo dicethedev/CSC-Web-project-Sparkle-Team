@@ -1,44 +1,30 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const feedbackItems = document.querySelectorAll(".feedback-item");
-    const prevBtn = document.getElementById("prev-btn");
-    const nextBtn = document.getElementById("next-btn");
-    const itemsPerPage = 3;
-    let currentPage = 1;
-    const totalPages = Math.ceil(feedbackItems.length / itemsPerPage);
-  
-    function showPage(page) {
-      const start = (page - 1) * itemsPerPage;
-      const end = start + itemsPerPage;
-  
-      feedbackItems.forEach((item, index) => {
-        if (index >= start && index < end) {
-          item.style.display = "flex"; // Show the item
-        } else {
-          item.style.display = "none"; // Hide the item
-        }
+  document.addEventListener("DOMContentLoaded", function() {
+    const cards = document.querySelectorAll('.feedback-item_container');
+    let currentIndex = 0;
+
+    function updateHighlight() {
+      cards.forEach((card, index) => {
+        card.classList.toggle('highlighted', index === currentIndex);
       });
-  
-      // Enable or disable pagination buttons
-      prevBtn.disabled = page === 1;
-      nextBtn.disabled = page === totalPages;
     }
-  
-    // Event listeners for pagination buttons
-    prevBtn.addEventListener("click", function() {
-      if (currentPage > 1) {
-        currentPage--;
-        showPage(currentPage);
+
+    document.getElementById('prev-btn').addEventListener('click', () => {
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = cards.length - 1;
       }
+      updateHighlight();
     });
-  
-    nextBtn.addEventListener("click", function() {
-      if (currentPage < totalPages) {
-        currentPage++;
-        showPage(currentPage);
+
+    document.getElementById('next-btn').addEventListener('click', () => {
+      if (currentIndex < cards.length - 1) {
+        currentIndex++;
+      } else {
+        currentIndex = 0;
       }
+      updateHighlight();
     });
-  
-    // Initial display
-    showPage(currentPage);
+
+    updateHighlight();
   });
-  
