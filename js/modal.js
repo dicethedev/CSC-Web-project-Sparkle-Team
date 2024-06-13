@@ -14,6 +14,15 @@ images.forEach(image => {
     });
 });
 
+var images = document.querySelectorAll('.best-selling-pro img ');
+images.forEach(image => {
+    image.addEventListener('click', function() {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt;
+    });
+});
+
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
