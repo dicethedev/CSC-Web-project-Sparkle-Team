@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #C2EFD4;
+    font-family: "Rufina", sans-serif;
+
+}
+.intro{
+    margin: 50px;
+    padding: 30px;
+    color:  #224F34;
+    font-size: 55px;
+    line-height: 3rem;
+    float: left;
+}
+
+#info{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.photo{
+    float: right;
+    margin: 20px 50px;
+    padding: 20px 20px;
+}
+
+img{
+    border-top-left-radius: 75px; 
+    border-bottom-right-radius: 75px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px; 
+}
+
+button{
+    border-radius: 3px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #224F34;
+    color: white;
+    box-shadow: none;
+    float: left;
+}
