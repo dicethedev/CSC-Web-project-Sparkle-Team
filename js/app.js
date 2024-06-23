@@ -1,21 +1,18 @@
-
 // Mobile Menu
-document.addEventListener('DOMContentLoaded', () => {
-  const hamburgerButton = document.querySelector('.hamburger-button');
-  const mobileMenu = document.querySelector('.mobile-menu');
+document.addEventListener("DOMContentLoaded", () => {
+  const hamburgerButton = document.querySelector(".hamburger-button");
+  const mobileMenu = document.querySelector(".mobile-menu");
 
-  hamburgerButton.addEventListener('click', () =>
-    mobileMenu.classList.toggle('active')
+  hamburgerButton.addEventListener("click", () =>
+    mobileMenu.classList.toggle("active")
   );
 });
-
 
 // Set the date we're counting down to
 var countDownDate = new Date("Jun 30, 2024 15:37:25").getTime();
 
 // Update the count down every 1 second
-var x = setInterval(function() {
-
+var x = setInterval(function () {
   // Get today's date and time
   var now = new Date().getTime();
 
@@ -34,7 +31,7 @@ var x = setInterval(function() {
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
 
-  // If the count down is over, write some text 
+  // If the count down is over, write some text
   if (distance < 0) {
     clearInterval(x);
     document.getElementById("days").innerHTML = "00";
