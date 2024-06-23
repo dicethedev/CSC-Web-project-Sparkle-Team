@@ -1,46 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap');
+/* styles.css */
 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #C2EFD4;
-    font-family: "Rufina", sans-serif;
-
-}
-.intro{
-    margin: 50px;
-    padding: 30px;
-    color:  #224F34;
-    font-size: 55px;
-    line-height: 3rem;
-    float: left;
+.samod-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #c2efd4;
 }
 
-#info{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 25px;
+.samod-text {
+  max-width: 50%;
 }
 
-.photo{
-    float: right;
-    margin: 20px 50px;
-    padding: 20px 20px;
+.samod-text h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4em;
+  color: #2c7a21;
 }
 
-img{
-    border-top-left-radius: 75px; 
-    border-bottom-right-radius: 75px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px; 
+.samod-text p {
+  font-size: 1.5em;
+  color: #2c7a21;
+  margin: 20px 0;
 }
 
-button{
-    border-radius: 3px;
-    margin: 20px;
-    padding: 10px;
-    background-color: #224F34;
-    color: white;
-    box-shadow: none;
-    float: left;
+.explore-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2e3a59;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.samod-image {
+  max-width: 40%;
+}
+
+.samod-image img {
+  width: 100%;
+  border-radius: 20px;
 }
