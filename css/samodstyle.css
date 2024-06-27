@@ -1,0 +1,44 @@
+/* styles.css */
+
+.samod-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #c2efd4;
+}
+
+.samod-text {
+  max-width: 50%;
+}
+
+.samod-text h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4em;
+  color: #2c7a21;
+}
+
+.samod-text p {
+  font-size: 1.5em;
+  color: #2c7a21;
+  margin: 20px 0;
+}
+
+.explore-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #2e3a59;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.samod-image {
+  max-width: 40%;
+}
+
+.samod-image img {
+  width: 100%;
+  border-radius: 20px;
+}
