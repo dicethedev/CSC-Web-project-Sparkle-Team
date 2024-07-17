@@ -65,33 +65,25 @@
       </div>
     </nav>
 
-    <header class="custom-header">
-      <h1>Our Features</h1>
-      <p>Explore the unique features that make us stand out.</p>
-    </header>
-
-    <section class="features-section">
-      <div class="container">
-        <div class="feature">
-          <img src="images/feature1.png" alt="Feature 1" />
-          <h2>High Quality</h2>
-          <p>We ensure the highest quality standards for all our products.</p>
-        </div>
-        <div class="feature">
-          <img src="images/feature2.png" alt="Feature 2" />
-          <h2>Latest Trends</h2>
-          <p>Stay updated with the latest fashion trends.</p>
-        </div>
-        <div class="feature">
-          <img src="images/feature3.png" alt="Feature 3" />
-          <h2>Customer Satisfaction</h2>
+    <main>
+      <section class="event-section">
+        <div class="container">
+          <h1>Featured Upcoming Events</h1>
           <p>
-            Your satisfaction is our priority. We offer exceptional customer
-            service.
+            Keep coming back to our website to stay informed about the
+            activities in our store and reserve your preferred seats in advance.
           </p>
+          <div class="event-grid" id="event-grid">
+            <!-- Events will be dynamically inserted here by JavaScript -->
+          </div>
+          <div class="pagination">
+            <button id="prev-page" class="pagination-btn">Prev</button>
+            <span id="page-number">1</span>
+            <button id="next-page" class="pagination-btn">Next</button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer-container">
@@ -139,5 +131,18 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div id="eventModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="Event Image" />
+        <h2 id="modalTitle"></h2>
+        <p id="modalDate"></p>
+        <p id="modalTime"></p>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+
+    <script src="js/events.js"></script>
   </body>
 </html>

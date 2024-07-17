@@ -1364,3 +1364,276 @@ form button {
     flex-direction: column;
   }
 }
+
+/* Event Section */
+.event-section {
+  padding: 20px;
+  background-color: #f4f4f6;
+}
+
+.event-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.event-item {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: left;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.event-item img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 20px;
+  object-position: top;
+}
+
+.event-item h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.event-item p {
+  margin: 5px 0;
+  color: #666666;
+}
+
+.event-item .event-details {
+  flex-grow: 1;
+}
+
+.event-item .event-date {
+  font-size: 16px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.event-item .event-category {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #1e3f2d;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-btn {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.pagination-btn:hover {
+  background-color: #1e3f2d;
+}
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 700px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .event-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* BOARD OF TRUSTEES PAGE */
+
+.board-of-trustees {
+  width: 100%;
+  padding: 50px 305px;
+  background-color: #f4f4f6; /* Added background color for better visual separation */
+}
+
+.board-of-trustees-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.first-text-bot {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+}
+
+.first-text-bot h1 {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 40px;
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+}
+
+.first-text-bot p {
+  color: var(--primary-color);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.trustees-card-box {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+}
+
+.trustees-card {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 8px #e6e6e6;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff; /* Added background color for cards */
+}
+
+.trustee-img img {
+  width: 100%;
+  height: 450px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  object-position: top;
+  /* border-radius: 5px; */
+}
+
+.trustee-text {
+  width: 100%;
+  padding: 10px;
+  background: #c2efd4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.trustee-text h3 {
+  font-size: 1.2em;
+  color: var(--dark-color);
+}
+
+.trustee-text p {
+  font-size: 1em;
+  color: var(--dark-color);
+}
+
+/* MEDIA QUERY FOR TRUSTEES PAGE */
+@media (max-width: 1168px) {
+  .board-of-trustees {
+    padding: 50px 40px;
+  }
+}
+
+@media (max-width: 960px) {
+  .board-of-trustees {
+    padding: 50px 40px;
+  }
+}
+
+@media (max-width: 670px) {
+  .board-of-trustees {
+    padding: 50px 20px;
+  }
+
+  .trustees-card-box {
+    grid-template-columns: 1fr;
+  }
+
+  .trustees-card {
+    height: auto; /* Adjusted for better responsiveness */
+  }
+}
+
+@media (max-width: 500px) {
+  .board-of-trustees {
+    padding: 20px;
+  }
+
+  .trustees-card-box {
+    grid-template-columns: 1fr;
+  }
+
+  .trustees-card {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+}
