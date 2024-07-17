@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop - Fashion House</title>
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/product.css" />
   </head>
   <body>
     <nav class="navbar">
@@ -67,57 +68,54 @@
       </div>
     </nav>
 
+    <!-- Ayotomide did the Marquee Section -->
+    <div class="marquee">
+      <span
+        >Welcome to the fastest rising fashion industry in the world. You can go
+        to the upcoming events and announcements to know the lastest news and
+        offers in our store.</span
+      >
+    </div>
     <header class="custom-header">
       <h1>Shop Our Collection</h1>
       <p>Discover the latest fashion trends and styles in our shop.</p>
     </header>
 
-    <div class="productmain">
-      <div class="product-list">
-        <!-- Add product items here as needed -->
-        <div class="product">
-          <img src="images/pix1.png" alt="Spread Collar Shirt" />
-          <h2>Spread Collar Shirt</h2>
-          <p>$48.99 | Rating: 5.0 <span class="rating-star">&#9733;</span></p>
+    <main>
+      <section class="product-section">
+        <div class="container">
+          <h1>Shop</h1>
+          <div class="breadcrumb"><a href="#">Home</a> / <span>Shop</span></div>
+          <div class="filter-sort">
+            <div class="filter">
+              <label for="filter">Filter: </label>
+              <select id="filter">
+                <option value="all">All</option>
+                <option value="men">Men</option>
+                <option value="women">Women</option>
+              </select>
+            </div>
+            <div class="sort">
+              <label for="sort">Sort by: </label>
+              <select id="sort">
+                <option value="popularity">Popularity</option>
+                <option value="rating">Rating</option>
+                <option value="newest">Newest</option>
+                <option value="price">Price</option>
+              </select>
+            </div>
+          </div>
+          <div class="product-grid" id="product-grid">
+            <!-- Products will be dynamically inserted here by JavaScript -->
+          </div>
+          <div class="pagination">
+            <button id="prev-page" class="pagination-btn">Prev</button>
+            <span id="page-number">1</span>
+            <button id="next-page" class="pagination-btn">Next</button>
+          </div>
         </div>
-        <div class="product">
-          <img src="images/pix2.png" alt="Spread Collar Shirt" />
-          <h2>Silk Grey Vest</h2>
-          <p>$63.99 | Rating: 4.5 <span class="rating-star">&#9733;</span></p>
-        </div>
-        <div class="product">
-          <img src="images/pix3.png" alt="Spread Collar Shirt" />
-          <h2>Striped Bunny Top</h2>
-          <p>$54.99 | Rating: 4.7 <span class="rating-star">&#9733;</span></p>
-        </div>
-        <div class="product">
-          <img src="images/pix4.png" alt="Spread Collar Shirt" />
-          <h2>Grey Hoodie</h2>
-          <p>$74.99 | Rating: 5.0 <span class="rating-star">&#9733;</span></p>
-        </div>
-        <div class="product">
-          <img src="images/pix5.png" alt="Spread Collar Shirt" />
-          <h2>Classic Black Sweater</h2>
-          <p>$34.99 | Rating: 5.0 <span class="rating-star">&#9733;</span></p>
-        </div>
-        <div class="product">
-          <img src="images/pix6.png" alt="Spread Collar Shirt" />
-          <h2>Spread Collar Shirt</h2>
-          <p>$48.99 | Rating: 5.0 <span class="rating-star">&#9733;</span></p>
-        </div>
-        <div class="product">
-          <img src="images/pix7.png" alt="Spread Collar Shirt" />
-          <h2>Pink Woolly Coat</h2>
-          <p>$99.99 | Rating: 5.0 <span class="rating-star">&#9733;</span></p>
-        </div>
-        <div class="product">
-          <img src="images/pix8.png" alt="Spread Collar Shirt" />
-          <h2>Green Round Neck Top</h2>
-          <p>$88.99 | Rating: 4.8 <span class="rating-star">&#9733;</span></p>
-        </div>
-        <!-- Repeat for other products -->
-      </div>
-    </div>
+      </section>
+    </main>
 
     <footer class="footer">
       <div class="footer-container">
@@ -165,5 +163,14 @@
         </div>
       </div>
     </footer>
+
+    <!-- Modal -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="modalImage" />
+      <div id="caption"></div>
+    </div>
   </body>
+  <script src="js/product.js"></script>
+  <script src="js/modal.js"></script>
 </html>

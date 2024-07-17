@@ -101,6 +101,8 @@ body {
   height: auto;
   border-radius: 8px;
   cursor: pointer;
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  object-position: top;
 }
 
 .best-selling-pro h2 {
@@ -135,10 +137,12 @@ body {
 }
 
 .product img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
   cursor: pointer;
+  width: 100%;
+  height: 300px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  object-position: top;
+  border-radius: 5px;
 }
 
 .product h2 {
@@ -1263,6 +1267,34 @@ form button {
   font-weight: medium;
   color: #373737;
   padding: 0 5px;
+}
+
+/* Ayotomide did the Marquee Section */
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #c2efd4;
+  padding: 10px 0;
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 25s linear infinite;
+  font-size: 24px;
+  color: black;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 /* Media Queries for Designer Clothes */
