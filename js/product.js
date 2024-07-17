@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const products = [
     {
       id: 1,
-      name: "Men Product 1",
+      name: "Men Ankara Style 1",
       category: "men",
       price: "$20.00",
       rating: 4.5,
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       id: 3,
-      name: "Men Product 2",
+      name: "Men Ankara Style 2",
       category: "men",
       price: "$25.00",
       rating: 4.2,
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       id: 5,
-      name: "Men Product 3",
+      name: "Men Ankara Style 3",
       category: "men",
       price: "$18.00",
       rating: 3.9,
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       id: 7,
-      name: "Men Product 4",
+      name: "Men Ankara Style 4",
       category: "men",
       price: "$28.00",
       rating: 4.1,
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       id: 9,
-      name: "Men Product 5",
+      name: "Men Ankara Style 5",
       category: "men",
       price: "$32.00",
       rating: 4.3,
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       id: 11,
-      name: "Men Product 6",
+      name: "Men Ankara Style 6",
       category: "men",
       price: "$20.00",
       rating: 4.5,
@@ -120,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       id: 13,
-      name: "Men Product 7",
+      name: "Men Ankara Style 7",
       category: "men",
       price: "$25.00",
       rating: 4.2,
@@ -138,7 +138,7 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       id: 15,
-      name: "Men Product 8",
+      name: "Men Ankara Style 8",
       category: "men",
       price: "$18.00",
       rating: 3.9,
@@ -153,6 +153,42 @@ document.addEventListener("DOMContentLoaded", function () {
       rating: 4.7,
       image: "images/wpix8.jpg",
       description: "Description for Women Product 8",
+    },
+    {
+      id: 17,
+      name: "Men Ankara Style 9",
+      category: "Men",
+      price: "$35.00",
+      rating: 4.7,
+      image: "images/pix9.jpg",
+      description: "Description for men Product 9",
+    },
+    {
+      id: 18,
+      name: "Women Product 9",
+      category: "women",
+      price: "$35.00",
+      rating: 4.7,
+      image: "images/wpix9.jpg",
+      description: "Description for Women Product 9",
+    },
+    {
+      id: 19,
+      name: "Men Agbada Style 1",
+      category: "Men",
+      price: "$35.00",
+      rating: 4.7,
+      image: "images/pix10.jpg",
+      description: "Description for men Product 10",
+    },
+    {
+      id: 20,
+      name: "Men Agbada Style 2",
+      category: "women",
+      price: "$35.00",
+      rating: 4.7,
+      image: "images/pix11.jpg",
+      description: "Description for Men Product 9",
     },
   ];
 

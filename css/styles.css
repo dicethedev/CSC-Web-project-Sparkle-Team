@@ -137,12 +137,12 @@ body {
 }
 
 .product img {
-  cursor: pointer;
   width: 100%;
   height: 300px; /* Set a fixed height for the images */
   object-fit: cover; /* Ensures the image covers the area without stretching */
   object-position: top;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .product h2 {
@@ -925,7 +925,7 @@ img {
 
 /* Main */
 main {
-  padding: 20px;
+  padding: 5px 0px 0px 0px;
 }
 
 .container h1 {
@@ -1082,6 +1082,20 @@ form button {
 
 .btn:hover {
   background-color: #1e3f2d;
+}
+
+#booking-form button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#booking-form button:hover {
+  background: #1e3f2d;
 }
 
 /* Feedback Corner */
@@ -1636,4 +1650,121 @@ form button {
     height: auto;
     border-radius: 10px;
   }
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 20px;
+}
+
+/* Product Item */
+.product-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 1px 8px #e6e6e6;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
+  text-align: center;
+  padding: 20px;
+  cursor: pointer; /* Ensure cursor changes to a hand */
+}
+
+.product-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* Carousel Section */
+.carousel-section {
+  position: relative;
+  width: 100%;
+  /* margin: 0 auto; */
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-item {
+  position: relative;
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  display: block;
+  height: 600px; /* Set a fixed height for the images */
+  object-fit: cover; /* Ensures the image covers the area without stretching */
+  object-position: top;
+}
+
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.carousel-caption h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.carousel-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #1e3f2d;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 10;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.carousel-control:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }

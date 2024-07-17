@@ -50,3 +50,34 @@ function rotateImages() {
     }, 500); // Duration of the animation
   });
 }
+
+// Script for carousel in the index page
+document.addEventListener("DOMContentLoaded", function () {
+  const prevSlide = document.getElementById("prevSlide");
+  const nextSlide = document.getElementById("nextSlide");
+  const carousel = document.querySelector(".carousel");
+  const carouselItems = document.querySelectorAll(".carousel-item");
+  let currentIndex = 0;
+
+  function updateCarousel() {
+    const offset = -currentIndex * 100;
+    carousel.style.transform = `translateX(${offset}%)`;
+  }
+
+  prevSlide.addEventListener("click", function () {
+    currentIndex =
+      currentIndex > 0 ? currentIndex - 1 : carouselItems.length - 1;
+    updateCarousel();
+  });
+
+  nextSlide.addEventListener("click", function () {
+    currentIndex =
+      currentIndex < carouselItems.length - 1 ? currentIndex + 1 : 0;
+    updateCarousel();
+  });
+
+  // Auto-slide functionality (optional)
+  setInterval(function () {
+    nextSlide.click();
+  }, 5000); // Change slide every 5 seconds
+});

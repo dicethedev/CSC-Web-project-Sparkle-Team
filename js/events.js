@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "Fashion",
       date: "Aug 20, 2024",
       time: "6:00 PM",
-      image: "images/event1.jpg",
+      image: "images/carousel-1.jpg",
       description: "An exclusive fashion show featuring the latest trends.",
     },
     {
@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "Sale",
       date: "Sep 10, 2024",
       time: "9:00 AM",
-      image: "images/event2.jpg",
+      image: "images/discount.jpg",
       description: "Enjoy amazing discounts on a wide range of products.",
     },
     {
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "Sale",
       date: "Dec 20, 2024",
       time: "10:00 AM",
-      image: "images/event4.jpg",
+      image: "images/chrismas.jpg",
       description: "Get ready for Christmas with our special sale.",
     },
     {
@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "Sale",
       date: "Jan 1, 2025",
       time: "8:00 AM",
-      image: "images/event5.jpg",
+      image: "images/newyear.jpg",
       description: "Start the new year with amazing discounts.",
     },
     {
@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "Fashion",
       date: "Mar 15, 2025",
       time: "5:00 PM",
-      image: "images/event6.jpg",
+      image: "images/spring.jpg",
       description: "Join us for the launch of our new spring collection.",
     },
     {
@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "Sale",
       date: "Jun 1, 2025",
       time: "9:00 AM",
-      image: "images/event7.jpg",
+      image: "images/summer.jpg",
       description: "Hot summer deals you don't want to miss.",
     },
     {
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "Fashion",
       date: "Sep 5, 2025",
       time: "7:00 PM",
-      image: "images/event8.jpg",
+      image: "images/autumn.jpg",
       description: "Showcasing our latest autumn collection.",
     },
     {
@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "Sale",
       date: "Dec 1, 2025",
       time: "10:00 AM",
-      image: "images/event9.jpg",
+      image: "images/winter.jpg",
       description: "Amazing winter deals and discounts.",
     },
     {
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "Sale",
       date: "Feb 14, 2025",
       time: "8:00 AM",
-      image: "images/event10.jpg",
+      image: "images/valentine.jpg",
       description: "Special deals for Valentine's Day.",
     },
   ];
