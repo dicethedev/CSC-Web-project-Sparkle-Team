@@ -112,7 +112,7 @@ body {
   color: #666666;
 }
 
-/* Product Main */
+/* Product Main Index Page*/
 .productmain {
   padding: 20px;
   max-width: 1200px;
@@ -128,7 +128,7 @@ body {
 
 .product {
   background-color: #ffffff;
-  border-radius: 5px;
+  border-radius: 0px;
   padding: 10px;
   text-align: center;
 }
@@ -421,7 +421,63 @@ img {
   color: #fff;
 }
 
-/* Hamburger Button */
+/* Navbar */
+.navbar {
+  background: #c2efd4;
+  padding: 40px;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar .main-menu ul {
+  display: flex;
+}
+
+.navbar ul li a {
+  padding: 10px 20px;
+  display: block;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: 0.5s;
+}
+
+.navbar ul li a:hover {
+  color: var(--primary-color);
+}
+
+.navbar ul li a i {
+  margin-right: 10px;
+}
+
+.navbar ul li:last-child a {
+  margin-left: 10px;
+}
+
+/* Hide mobile menu by default */
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 250px;
+  height: 100%;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  transition: right 0.3s ease-in-out;
+}
+
+/* Show mobile menu when active */
+.mobile-menu.active {
+  right: 0;
+  display: block; /* Ensure the menu is displayed when active */
+}
+
+/* Hamburger button styles */
 .hamburger-button {
   display: none;
   background: none;
@@ -438,35 +494,14 @@ img {
   margin: 6px 0;
 }
 
-/* Mobile Menu */
-.mobile-menu {
-  position: fixed;
-  top: 0;
-  right: -300px;
-  width: 250px;
-  height: 100%;
-  z-index: 100;
-  background: #fff;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  transition: right 0.3s ease-in-out;
-}
+@media (max-width: 960px) {
+  .navbar .main-menu {
+    display: none;
+  }
 
-.mobile-menu.active {
-  right: 0;
-}
-
-.mobile-menu ul {
-  margin-top: 100px;
-  padding-right: 10px;
-}
-
-.mobile-menu ul li {
-  margin: 10px 0;
-}
-
-.mobile-menu ul li a {
-  font-size: 20px;
-  transition: 0.3s;
+  .navbar .hamburger-button {
+    display: block;
+  }
 }
 
 /* Media Queries */
@@ -689,14 +724,13 @@ img {
   }
 
   .designer-clothes-container {
-    padding: 50px 40px;
-    height: 100%;
+    padding: 20px;
     width: 100%;
+    height: auto; /* Changed from 100% to auto to adapt height based on content */
   }
 
   .designer-clothes-box {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -705,21 +739,22 @@ img {
 
   .imagesandtexts {
     width: 100%;
-    height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row; /* Changed to row for initial layout */
+    flex-wrap: wrap; /* Ensure items wrap to the next line on smaller screens */
     justify-content: space-between;
-    gap: 5rem;
-    align-items: center;
+    align-items: flex-start;
+    gap: 1rem;
   }
 
   .image1-text1,
   .image2-text2,
   .image3-text3 {
-    width: 100%;
-    height: 100%;
+    /* width: calc(33.333% - 2rem); Three items per row with gap */
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center align content */
+    text-align: center; /* Center text */
   }
 }
 
@@ -1456,7 +1491,7 @@ form button {
 /* BOARD OF TRUSTEES PAGE */
 .board-of-trustees {
   width: 100%;
-  padding: 50px 305px;
+  padding: 30px 20px;
   background-color: #f4f4f6;
 }
 
@@ -1464,14 +1499,13 @@ form button {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  gap: 1rem;
 }
 
 .first-text-bot {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   padding: 15px 0;
 }
 
@@ -1480,35 +1514,33 @@ form button {
   font-weight: 600;
   font-size: 40px;
   font-family: "Roboto Slab", serif;
-  text-align: center;
 }
 
 .first-text-bot p {
   color: var(--primary-color);
-  text-align: center;
+  font-family: "Poppins", sans-serif;
 }
 
 .trustees-card-box {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 5px;
 }
 
 .trustees-card {
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 8px #e6e6e6;
-  border-radius: 10px;
+  border-radius: 0px;
   overflow: hidden;
   background: #fff;
 }
 
 .trustee-img img {
-  width: 100%;
-  height: 450px;
+  width: 150%;
+  height: 450%;
   object-fit: cover;
-  object-position: top;
 }
 
 .trustee-text {
@@ -1531,7 +1563,7 @@ form button {
   color: var(--dark-color);
 }
 
-/* MEDIA QUERY FOR TRUSTEES PAGE */
+/* Responsive styles */
 @media (max-width: 1168px) {
   .board-of-trustees {
     padding: 50px 40px;
@@ -1541,6 +1573,9 @@ form button {
 @media (max-width: 960px) {
   .board-of-trustees {
     padding: 50px 40px;
+    .trustees-card-box {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    }
   }
 }
 
@@ -1550,27 +1585,7 @@ form button {
   }
 
   .trustees-card-box {
-    grid-template-columns: 1fr;
-  }
-
-  .trustees-card {
-    height: auto;
-  }
-}
-
-@media (max-width: 500px) {
-  .board-of-trustees {
-    padding: 20px;
-  }
-
-  .trustees-card-box {
-    grid-template-columns: 1fr;
-  }
-
-  .trustees-card {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
+    grid-template-columns: 1fr; /* 1 column */
   }
 }
 

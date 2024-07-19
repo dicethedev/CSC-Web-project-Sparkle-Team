@@ -1,13 +1,3 @@
-// Mobile Menu
-document.addEventListener("DOMContentLoaded", () => {
-  const hamburgerButton = document.querySelector(".hamburger-button");
-  const mobileMenu = document.querySelector(".mobile-menu");
-
-  hamburgerButton.addEventListener("click", () =>
-    mobileMenu.classList.toggle("active")
-  );
-});
-
 // Set the date we're counting down to
 var countDownDate = new Date("Jul 30, 2024 15:37:25").getTime();
 
@@ -40,3 +30,12 @@ var x = setInterval(function () {
     document.getElementById("seconds").innerHTML = "00";
   }
 }, 1000);
+
+document.addEventListener("DOMContentLoaded", function () {
+  const hamburgerButton = document.querySelector(".hamburger-button");
+  const mobileMenu = document.querySelector(".mobile-menu");
+
+  hamburgerButton.addEventListener("click", function () {
+    mobileMenu.classList.toggle("active");
+  });
+});
