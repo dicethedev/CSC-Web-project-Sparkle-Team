@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Features - Fashion House</title>
+    <title>Events - Sparkle Fashion House</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <nav class="navbar">
       <div class="container">
         <div class="logo">
-          <a href="index.html"> <img src="images/Rivo.svg" alt="logo" /> </a>
+          <a href="index.html">
+            <img src="images/logo.png" alt="logo" />
+          </a>
         </div>
 
         <div class="main-menu">
@@ -64,51 +66,55 @@
         </div>
       </div>
     </nav>
-
-    <header class="custom-header">
-      <h1>Our Features</h1>
-      <p>Explore the unique features that make us stand out.</p>
-    </header>
-
-    <section class="features-section">
-      <div class="container">
-        <div class="feature">
-          <img src="images/feature1.png" alt="Feature 1" />
-          <h2>High Quality</h2>
-          <p>We ensure the highest quality standards for all our products.</p>
-        </div>
-        <div class="feature">
-          <img src="images/feature2.png" alt="Feature 2" />
-          <h2>Latest Trends</h2>
-          <p>Stay updated with the latest fashion trends.</p>
-        </div>
-        <div class="feature">
-          <img src="images/feature3.png" alt="Feature 3" />
-          <h2>Customer Satisfaction</h2>
+    <div class="marquee">
+      <span
+        >Welcome to the fastest rising fashion industry in the world. You can go
+        to the upcoming events and announcements to know the lastest news and
+        offers in our store.</span
+      >
+    </div>
+    <main>
+      <section class="event-section">
+        <div class="container">
+          <h1>Featured Upcoming Events</h1>
           <p>
-            Your satisfaction is our priority. We offer exceptional customer
-            service.
+            Keep coming back to our website to stay informed about the
+            activities in our store and reserve your preferred seats in advance.
           </p>
+          <div class="event-grid" id="event-grid">
+            <!-- Events will be dynamically inserted here by JavaScript -->
+          </div>
+          <div class="pagination">
+            <button id="prev-page" class="pagination-btn">Prev</button>
+            <span id="page-number">1</span>
+            <button id="next-page" class="pagination-btn">Next</button>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
+    <!-- --------------------------------- FOOTER SECTION ------------------------------------------------- -->
     <footer class="footer">
       <div class="footer-container">
         <div class="footer-column">
-          <h2 class="footer-logo">Rivo</h2>
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logowhite.png" alt="logo" />
+            </a>
+          </div>
           <p>Social Media</p>
           <div class="social-media-icons">
             <a href="#"><img src="images/facebook.png" alt="Facebook" /></a>
             <a href="#"><img src="images/twitter.png" alt="Twitter" /></a>
             <a href="#"><img src="images/instagram.png" alt="Instagram" /></a>
+            <!-- Add more images for other social media platforms -->
           </div>
         </div>
         <div class="footer-column">
           <h3>SHOP</h3>
           <ul>
-            <li><a href="#">Products</a></li>
-            <li><a href="#">Overview</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
             <li><a href="#">Pricing</a></li>
             <li><a href="#">Releases</a></li>
           </ul>
@@ -116,10 +122,10 @@
         <div class="footer-column">
           <h3>COMPANY</h3>
           <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">News</a></li>
-            <li><a href="#">Support</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="appointment.html">Bookings</a></li>
+            <li><a href="trustees.html">Trustees</a></li>
           </ul>
         </div>
         <div class="footer-column">
@@ -139,5 +145,18 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div id="eventModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img id="modalImage" src="" alt="Event Image" />
+        <h2 id="modalTitle"></h2>
+        <p id="modalDate"></p>
+        <p id="modalTime"></p>
+        <p id="modalDescription"></p>
+      </div>
+    </div>
+
+    <script src="js/events.js"></script>
   </body>
 </html>
