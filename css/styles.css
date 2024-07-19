@@ -1876,114 +1876,83 @@ form button {
   }
 }
 
-
-
 /* BOARD OF TRUSTEES PAGE */
-
 .board-of-trustees {
   width: 100%;
-  height: 100%;
   padding: 50px 305px;
+  background-color: #f4f4f6;
 }
 
 .board-of-trustees-box {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   gap: 2rem;
 }
 
 .first-text-bot {
   width: 100%;
-  height: fit-content;
   display: flex;
-  gap: 1rem;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
   padding: 15px 0;
 }
 
 .first-text-bot h1 {
   color: var(--primary-color);
   font-weight: 600;
-  font-size: medium;
   font-size: 40px;
-  font-family: "roboto slab";
+  font-family: "Roboto Slab", serif;
   text-align: center;
 }
 
 .first-text-bot p {
   color: var(--primary-color);
   text-align: center;
-  font-family: "Poppins";
 }
 
 .trustees-card-box {
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  gap: 5rem;
-  /* background: red; */
-}
-
-.trustees-card-line1 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.trustees-card-line2 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: space-between;
-}
-
-.trustees-card-line3 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  /* gap: 10rem; */
-  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
 .trustees-card {
-  width: 30%;
-  height: 45vh;
   display: flex;
   flex-direction: column;
   box-shadow: 1px 1px 8px #e6e6e6;
-}
-
-.trustee-img {
-  width: 100%;
-  height: 65%;
-  /* border-radius: 70px 0 0 0; */
-  /* background: red; */
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
 }
 
 .trustee-img img {
   width: 100%;
-  height: 130%;
-  border-radius: 10px 10px 10px 10px;
+  height: 450px;
+  object-fit: cover;
+  object-position: top;
 }
 
 .trustee-text {
   width: 100%;
-  height: 35%;
-  background: #C2EFD4;
+  padding: 10px;
+  background: #c2efd4;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-radius: 10px 10px 10px 10px;
 }
 
+.trustee-text h3 {
+  font-size: 1.2em;
+  color: var(--dark-color);
+}
 
+.trustee-text p {
+  font-size: 1em;
+  color: var(--dark-color);
+}
 
 /* MEDIA QUERY FOR TRUSTEES PAGE */
 @media (max-width: 1168px) {
@@ -1998,65 +1967,32 @@ form button {
   }
 }
 
-@media (max-width: 900px) {
-  .board-of-trustees {
-    padding: 50px 40px;
-  }
-}
-
 @media (max-width: 670px) {
   .board-of-trustees {
-    padding: 50px 40px;
+    padding: 50px 20px;
   }
 
-  .imagesandtexts {
-    width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: space-between;
+  .trustees-card-box {
+    grid-template-columns: 1fr;
+  }
+
+  .trustees-card {
+    height: auto;
   }
 }
 
 @media (max-width: 500px) {
   .board-of-trustees {
-    padding: 50px 40px;
-    height: 100%;
-    width: 100%;
-  }
-
-  .board-of-trustees-box {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    /* justify-content: center; */
+    padding: 20px;
   }
 
   .trustees-card-box {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .trustees-card-line1,
-  .trustees-card-line2,
-  .trustees-card-line3 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 3rem;
+    grid-template-columns: 1fr;
   }
 
   .trustees-card {
     width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    border-radius: 70px 0 70px 0;
-    box-shadow: 1px 1px 8px #e6e6e6;
+    height: auto;
+    border-radius: 10px;
   }
 }
