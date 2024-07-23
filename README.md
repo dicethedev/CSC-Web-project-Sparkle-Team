@@ -1,6 +1,6 @@
 ### Project Overview for CSC-Web-project-Sparkle-Team
 
-`The CSC Web Project by the Misfits Group is an upcoming fashion house website. The primary goal of this project is to showcase the products offered by the fashion house, maintain a consistent link structure across all pages, display photos of the group members as the Board of Trustees, provide a platform for inquiries and appointment bookings, and display upcoming events. The project utilizes external CSS for styling and includes various JavaScript features to enhance interactivity.`
+`The CSC Web Project by the Sparkle-Team is an upcoming fashion house website. The primary goal of this project is to showcase the products offered by the fashion house, maintain a consistent link structure across all pages, display photos of the group members as the Board of Trustees, provide a platform for inquiries and appointment bookings, and display upcoming events. The project utilizes external CSS for styling and includes various JavaScript features to enhance interactivity.`
 
 ### Task Sharing Overview
 
